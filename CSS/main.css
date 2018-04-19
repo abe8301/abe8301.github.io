@@ -13,6 +13,16 @@ body {
   text-align: center;
 }
 
+.box-header {
+  padding: 35px;
+  position: relative;
+  font-size: 42px;
+  font-family: 'Futura';
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
+  text-align: center;
+}
+
 .bground {
   background-image: url("../Images/buildings1.jpg");
   height: 100vh;
@@ -30,14 +40,14 @@ body {
 .menu-icon {
   position: fixed;
   top: 53px;
-  right: 20px;
+  right: 35px;
   width: 50px;
   height: 44px;
   padding: 4px 8px;
   background: #262626;
   box-sizing: border-box;
   border-radius: 50%;
-  opacity: 0.4;
+  opacity: 0.9;
   cursor: pointer;
 }
 
@@ -48,6 +58,7 @@ body {
   background: #fff;
   margin: 6px 0;
   transition: .5s;
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
 }
 
 .menu-icon.active span {
@@ -68,11 +79,11 @@ body {
   transform: rotate(-45deg);
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .menu-icon {
-    top: 8px;
+    top: 12px;
     right: 10px;
-    z-index: 100;
+    z-index: 1;
     width: 40px;
     height: 38px;
     padding: 2px 8px;
@@ -118,11 +129,10 @@ body {
   color: #fff;
   font-size: 18px;
   text-decoration: none;
-  border-radius: 2px;
 }
 
 .sidebar .menu li a:hover {
-  background: linear-gradient(to right, rgba(255, 0, 128, 0.6), rgba(255, 0, 128, 0.2));
+  background: linear-gradient(to right, rgba(255, 0, 128, 0.6), rgba(255, 0, 128, 0.1));
   color: #fff;
   transition: .5s;
 }
@@ -160,11 +170,11 @@ body {
   background: linear-gradient(to right, rgba(255, 0, 128, 0.6), rgba(255, 0, 128, 0.1));
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .sidebar {
     left: -100%;
     width: 100%;
-    background: linear-gradient(to bottom right, black, rgba(0, 0, 0, 0.8));
+    background: linear-gradient(to bottom right, black, rgba(0, 0, 0, 0.6));
   }
   .sidebar .social-icon li {
     width: 25%;
@@ -174,10 +184,9 @@ body {
 .box1 {
   height: 100vh;
   width: 100%;
-  background-image: url(../Images/dark1.jpg);
   background-size: cover;
   background-position: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../Images/dark1.jpg");
   display: table;
   background-attachment: fixed;
   font-size: 32px;
@@ -188,7 +197,7 @@ body {
 .box2 {
   height: 100vh;
   width: 100%;
-  background-image: url(../Images/dark2.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Images/dark2.jpg");
   background-size: cover;
   background-position: center;
   display: table;
@@ -198,10 +207,22 @@ body {
 .box3 {
   height: 100vh;
   width: 100%;
-  background-image: url(../Images/dark3.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Images/dark4.jpg");
   background-size: cover;
   background-position: center;
   display: table;
   background-attachment: fixed;
+}
+
+.skill-icon {
+  color: #fff;
+  font-size: 24px;
+}
+
+.skill-icon a {
+  color: #fff;
+  transition: 0.5s ease;
+  font-size: 70px;
+  text-decoration-color: none;
 }
 /*# sourceMappingURL=main.css.map */
