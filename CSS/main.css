@@ -1,4 +1,11 @@
-h1 {
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  position: relative;
   font-size: 60px;
   font-family: 'Futura';
   color: #fff;
@@ -61,11 +68,25 @@ h1 {
   transform: rotate(-45deg);
 }
 
+@media screen and (max-width: 375px) {
+  .menu-icon {
+    top: 8px;
+    right: 10px;
+    z-index: 100;
+    width: 40px;
+    height: 38px;
+    padding: 2px 8px;
+  }
+  .menu-icon span {
+    height: 3px;
+  }
+}
+
 .sidebar {
   position: fixed;
   top: 0;
-  left: -250px;
-  width: 250px;
+  left: -280px;
+  width: 280px;
   height: 100vh;
   background: #262626;
   transition: .5s;
@@ -73,6 +94,7 @@ h1 {
   text-align: center;
   box-sizing: border-box;
   background: linear-gradient(to bottom right, black, rgba(0, 0, 0, 0.3));
+  z-index: 1;
 }
 
 .sidebar.active {
@@ -136,5 +158,50 @@ h1 {
 
 .sidebar .social-icon li a:hover {
   background: linear-gradient(to right, rgba(255, 0, 128, 0.6), rgba(255, 0, 128, 0.1));
+}
+
+@media screen and (max-width: 375px) {
+  .sidebar {
+    left: -100%;
+    width: 100%;
+    background: linear-gradient(to bottom right, black, rgba(0, 0, 0, 0.8));
+  }
+  .sidebar .social-icon li {
+    width: 25%;
+  }
+}
+
+.box1 {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../Images/dark1.jpg);
+  background-size: cover;
+  background-position: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+  display: table;
+  background-attachment: fixed;
+  font-size: 32px;
+  color: #fff;
+  text-align: center;
+}
+
+.box2 {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../Images/dark2.jpg);
+  background-size: cover;
+  background-position: center;
+  display: table;
+  background-attachment: fixed;
+}
+
+.box3 {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../Images/dark3.jpg);
+  background-size: cover;
+  background-position: center;
+  display: table;
+  background-attachment: fixed;
 }
 /*# sourceMappingURL=main.css.map */
