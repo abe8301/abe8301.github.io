@@ -1,3 +1,58 @@
+@font-face {
+    font-family: Monoton-Regular;
+    src: url(../Fonts/Monoton-Regular.ttf);
+}
+
+@font-face {
+    font-family: Flottflott;
+    src: url(../Fonts/Flottflott.ttf);
+}
+
+@font-face {
+    font-family: GradoGradooNF;
+    src: url(../Fonts/GradoGradooNF.ttf);
+}
+
+@font-face {
+    font-family: Clip;
+    src: url(../Fonts/Clip.ttf);
+}
+
+@font-face {
+    font-family: gather;
+    src: url(../Fonts/gather.ttf);
+}
+
+@font-face {
+    font-family: gathrgap;
+    src: url(../Fonts/gathrgap.ttf);
+}
+
+@font-face {
+    font-family: LasEnter_PersonalUseOnly;
+    src: url(../Fonts/LasEnter_PersonalUseOnly.ttf);
+}
+
+@font-face {
+    font-family: LinoleoScript;
+    src: url(../Fonts/LinoleoScript.ttf);
+}
+
+@font-face {
+    font-family: Neon;
+    src: url(../Fonts/Neon.ttf);
+}
+
+@font-face {
+    font-family: neon_pixel;
+    src: url(../Fonts/neon_pixel.ttf);
+}
+
+@font-face {
+    font-family: WarnesRegular;
+    src: url(../Fonts/WarnesRegular.ttf);
+}
+
 html,
 body {
     margin: 0;
@@ -5,9 +60,9 @@ body {
 }
 
 .header {
+    font-family: 'Clip';
     position: relative;
     font-size: 60px;
-    font-family: 'Futura';
     color: #fff;
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
     text-align: center;
@@ -26,9 +81,9 @@ body {
 }
 
 .header-credits {
+    font-family: 'Clip';
     position: relative;
     font-size: 60px;
-    font-family: 'Futura';
     color: #fff;
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
     text-align: center;
@@ -247,8 +302,8 @@ body {
     h3 {
         padding-top: 45px;
         padding-bottom: 35px;
-        font-size: 42px;
-        font-family: 'Futura';
+        font-size: 50px;
+        font-family: 'Clip';
         color: #fff;
         text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
     }
