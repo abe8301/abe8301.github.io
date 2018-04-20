@@ -11,21 +11,25 @@ body {
     color: #fff;
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
     text-align: center;
-}
-
-.box-header {
-    padding: 35px;
-    position: relative;
-    font-size: 42px;
-    font-family: 'Futura';
-    color: #fff;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
-    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
 }
 
 .bground {
     background-image: url("../Images/buildings1.jpg");
-    height: 100vh;
+    max-width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bground-credits {
+    max-width: 100%;
+    min-height: 100vh;
+    // overflow-x: hidden;
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../Images/ability1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -76,7 +80,7 @@ body {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .menu-icon {
         top: 12px;
         right: 10px;
@@ -158,7 +162,7 @@ body {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .sidebar {
         left: -100%;
         width: 100%;
@@ -177,7 +181,7 @@ body {
     width: 100%;
     background-size: cover;
     background-position: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url('../Images/dark1.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url('../Images/dark2.jpg');
     display: table;
     background-attachment: fixed;
     font-size: 32px;
@@ -188,21 +192,27 @@ body {
 .box2 {
     height: 100vh;
     width: 100%;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../Images/dark2.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../Images/dark1.jpg');
     background-size: cover;
     background-position: center;
     display: table;
     background-attachment: fixed;
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
 }
 
 .box3 {
     height: 100vh;
     width: 100%;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../Images/dark4.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../Images/dark4.jpg');
     background-size: cover;
     background-position: center;
     display: table;
     background-attachment: fixed;
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
 }
 
 .skill-icon {
@@ -210,13 +220,85 @@ body {
     font-size: 24px;
     a {
         color: #fff;
-        transition: 0.5s ease;
         font-size: 70px;
-        text-decoration-color: none;
+        transition: 1s ease;
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
+        &:hover {
+            color: #fff;
+            transition: 1s ease;
+            // opacity: 0.8;
+            text-shadow: none;
+            //  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
+        }
     }
-    // &:hover {
-    //     color: #fff;
-    //     border-radius: 20px;
-    //     background: linear-gradient( to right, rgba(255, 0, 128, 0.6), rgba(255, 0, 128, 0.1));
-    // }
+}
+
+.box {
+    h3 {
+        padding-top: 45px;
+        padding-bottom: 35px;
+        // position: relative;
+        font-size: 42px;
+        font-family: 'Futura';
+        color: #fff;
+        // text-align: center;
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
+    }
+    p {
+        color: #fff;
+        margin-bottom: 160px
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .box {
+        p {
+            margin-bottom: 25px;
+        }
+    }
+}
+
+.credits {
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        //spadding: 0.6rem;
+        // border: solid 2px;
+        // box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
+    }
+    h3 {
+        font-size: 42px;
+        font-family: 'Futura';
+        color: #fff;
+        text-align: center;
+        //padding-right: 15px;
+        // padding-top: 25px
+    }
+    p {
+        color: #fff;
+        padding: 35px;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .credits {
+        h3 {
+            padding-top: 35px;
+            font-size: 36px;
+        }
+        p {
+            margin-bottom: 25px;
+            padding: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .credits {
+        h3 {
+            font-size: 36px;
+        }
+    }
 }
