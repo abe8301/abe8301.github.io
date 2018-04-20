@@ -25,11 +25,22 @@ body {
     background-size: cover;
 }
 
+.header-credits {
+    position: relative;
+    font-size: 60px;
+    font-family: 'Futura';
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 130px;
+}
+
 .bground-credits {
     max-width: 100%;
     min-height: 100vh;
     // overflow-x: hidden;
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../Images/ability1.jpg");
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../Images/pub1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -80,7 +91,7 @@ body {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .menu-icon {
         top: 12px;
         right: 10px;
@@ -162,7 +173,7 @@ body {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .sidebar {
         left: -100%;
         width: 100%;
@@ -221,12 +232,11 @@ body {
     a {
         color: #fff;
         font-size: 70px;
-        transition: 1s ease;
+        transition: 3.5s ease;
         text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
         &:hover {
             color: #fff;
-            transition: 1s ease;
-            // opacity: 0.8;
+            transition: 0.6s;
             text-shadow: none;
             //  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
         }
@@ -237,11 +247,9 @@ body {
     h3 {
         padding-top: 45px;
         padding-bottom: 35px;
-        // position: relative;
         font-size: 42px;
         font-family: 'Futura';
         color: #fff;
-        // text-align: center;
         text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
     }
     p {
@@ -263,8 +271,8 @@ body {
         width: 100%;
         height: auto;
         border-radius: 5px;
-        //spadding: 0.6rem;
-        // border: solid 2px;
+        border: 1.5px solid #fff;
+        opacity: 0.7;
         // box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
     }
     h3 {
@@ -272,33 +280,10 @@ body {
         font-family: 'Futura';
         color: #fff;
         text-align: center;
-        //padding-right: 15px;
-        // padding-top: 25px
     }
     p {
         color: #fff;
-        padding: 35px;
         text-align: justify;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .credits {
-        h3 {
-            padding-top: 35px;
-            font-size: 36px;
-        }
-        p {
-            margin-bottom: 25px;
-            padding: 20px;
-        }
-    }
-}
-
-@media screen and (max-width: 990px) {
-    .credits {
-        h3 {
-            font-size: 36px;
-        }
+        margin-bottom: 35px;
     }
 }
