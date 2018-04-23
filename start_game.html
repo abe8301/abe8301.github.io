@@ -48,6 +48,18 @@
 
         </ul>
     </nav>
+    <main class="container container-fluid">
+        <section class="row">
+            <div id="myCanvas" class="col-lg-12">
+                <div></div>
+            </div>
+            <div class="col-lg-12">
+                <button class="btn btn-default" onmousedown="moveleft()" onmouseup="clearmove()">Left</button>
+                <button class="btn btn-default" onmousedown="accelerate(-0.05)" onmouseup="accelerate(0.05) ">Jump</button>
+                <button class="btn btn-default" onmousedown="moveright()" onmouseup="clearmove()">Right</button></div>
+            <button class="btn btn-danger" onclick="startGame()">Start Game</button>
+        </section>
+    </main>
 </body>
 
 </html>
